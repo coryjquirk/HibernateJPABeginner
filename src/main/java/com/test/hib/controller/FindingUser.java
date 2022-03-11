@@ -27,5 +27,4 @@ public class FindingUser {
         factory.close();
         session.close();
     }
-
 }

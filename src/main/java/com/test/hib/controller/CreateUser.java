@@ -40,12 +40,15 @@ public class CreateUser {
         /*========= We can pass value/data by using constructor =========*/
         User ufour = new User( "Christ", "christ@gmail.com",  "147852", 35, 35000.3,"NJ");
         User ufive = new User("Sid", "Sid", "s258", 29, 4000.36, "LA");
+        User uSix = new User("Cory", "me@me.com", "6a5d42f31", 26, 6600.56, "Minneapolis");
+
         Integer  userid = null;
         session.save(uone);
         session.save(uTwo);
         session.save(uThree);
         session.save(ufour);
         session.save(ufive);
+        session.save(uSix);
 
         t.commit();
         System.out.println("successfully saved");
